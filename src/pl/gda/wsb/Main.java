@@ -10,6 +10,7 @@ public class Main {
 
         Human human1 = new Human ("Artur", "Arturowski", "Enginer", 23);
         Human human2 = new Human ("Mario", "Kornacki", "Programmer", 25);
+        Human human3 = new Human ("Anotnio", "Moretto", "Robotic", 42);
 
         if (human1.age < human2.age)
         {
@@ -45,18 +46,21 @@ public class Main {
         //System.out.println(animal2);
         //System.out.println(animal2.animalAge);
 
-        Animal animalWithMaxWeight = animal1.weight > animal2.weight ? animal : animal2;
-        System.out.println("The heaviest animal is" +animalWithMaxWeight.name + ". Its weight is:" + animalWithMaxWeight.animalWeight + " kg.");
+        Animal animalWithMaxWeight = animal1.animalWeight > animal2.animalWeight ? animal1 : animal2;
+        System.out.println("The heaviest animal is" +animalWithMaxWeight.animalName + ". Its weight is:" + animalWithMaxWeight.animalWeight + " kg.");
         StringBuilder animaldesc = new StringBuilder("The heaviest animal is ").
                 append(animalWithMaxWeight.animalName).
                 append(". Its weight is:");
         System.out.println(animaldesc);
 
         ArrayList<Human> humanList = new ArrayList<>();
-        humansList.add(human1);
+        humanList.add(human1);
 
-        for (Human human : humansList){
+        for (Human human : humanList){
             System.out.println(human1.firstName);
+            System.out.println(human2.firstName);
+            System.out.println(human3.firstName);
+
         }
 
 
@@ -66,6 +70,11 @@ public class Main {
 
         System.out.println(phone2);
         System.out.println(phone2.phoneName);
+
+
+        System.out.println(human1);
+        System.out.println(human1.firstName);
+
 
     }
 }
