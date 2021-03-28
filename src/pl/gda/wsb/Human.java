@@ -6,6 +6,7 @@ public class Human {
     String position;
     int age;
     Animal pet;
+    Car car;
 
 
     public Human(String firstName, String lastName, String position, int age) {

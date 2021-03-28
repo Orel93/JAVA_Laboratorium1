@@ -29,8 +29,8 @@ public class Main {
 
         //Animal animal1 = new Animal ("monkey", 5, 24.50);
         //Animal animal2 = new Animal ("dog",10,21.12);
-        Animal animal1 =new Animal ("mouse", 10, 1, "mouse");
-        Animal animal2 =new Animal ("lion", 15, 100, "lion");
+        //Animal animal1 =new Animal ("mouse", 10, 1, "mouse");
+       //Animal animal2 =new Animal ("lion", 15, 100, "lion");
 
 
         /*if (animal1.animalWeight < animal2.animalWeight)
@@ -45,7 +45,7 @@ public class Main {
         {
             System.out.println(animal1.animalName+"and"+animal2.animalName+" weigh the same");
         }
-        */
+
         //System.out.println(animal2);
         //System.out.println(animal2.animalAge);
 
@@ -64,21 +64,21 @@ public class Main {
             System.out.println(human2.firstName);
             System.out.println(human3.firstName);
 
-        }
+        }*/
 
 
-        Phone phone1 = new Phone ("Nokia", 123321521, "blue");
-        Phone phone2 = new Phone ("Xiaomi", 523232123, "red");
+        //Phone phone1 = new Phone ("Nokia", 123321521, "blue");
+        //Phone phone2 = new Phone ("Xiaomi", 523232123, "red");
 
 
-        System.out.println(phone2);
-        System.out.println(phone2.phoneName);
 
+        //System.out.println(phone2);
+        //System.out.println(phone2.phoneName);
 
         System.out.println(human1);
         System.out.println(human1.firstName);
 
-        animal2.feed();
+        /*animal2.feed();
         animal2.takeForAWalk();
 
         animal1.feed();
@@ -86,8 +86,12 @@ public class Main {
         animal1.takeForAWalk();
         animal1.takeForAWalk();
         animal1.takeForAWalk();
-        animal1.feed();
+        animal1.feed();*/
 
+        Car car1 = new Car("Audi", "A4B8", "GCH21345", "Czarny Mat");
+        Car car2 = new Car("Porshe", "911", "GD5431A", "Złoty");
 
+        human1.car = car1;
+        System.out.println(human1.firstName + " " + human1.lastName + " posiada auto: " + human1.car.marka + human1.car.model + " o numerze rejestracyjnym " + human1.car.nrRejestracyjny + " o kolorze " + human1.car.kolor );
     }
 }
