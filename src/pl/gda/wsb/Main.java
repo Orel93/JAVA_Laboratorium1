@@ -27,8 +27,11 @@ public class Main {
         //System.out.println(human1);
         //System.out.println(human1.firstName);
 
-        Animal animal1 = new Animal ("monkey", 5, 24.50);
-        Animal animal2 = new Animal ("dog",10,21.12);
+        //Animal animal1 = new Animal ("monkey", 5, 24.50);
+        //Animal animal2 = new Animal ("dog",10,21.12);
+        Animal animal1 =new Animal ("mouse", 10, 1, "mouse");
+        Animal animal2 =new Animal ("lion", 15, 100, "lion");
+
 
         /*if (animal1.animalWeight < animal2.animalWeight)
         {
@@ -74,6 +77,16 @@ public class Main {
 
         System.out.println(human1);
         System.out.println(human1.firstName);
+
+        animal2.feed();
+        animal2.takeForAWalk();
+
+        animal1.feed();
+        animal1.feed();
+        animal1.takeForAWalk();
+        animal1.takeForAWalk();
+        animal1.takeForAWalk();
+        animal1.feed();
 
 
     }
